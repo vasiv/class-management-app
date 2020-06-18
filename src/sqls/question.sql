@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS `Question` (
+    ID INT NOT NULL,
+    Value TEXT NOT NULL,
+    PRIMARY KEY (ID)
+)
