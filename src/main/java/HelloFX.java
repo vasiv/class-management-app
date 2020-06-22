@@ -8,12 +8,14 @@ import javafx.fxml.FXMLLoader;
 
 public class HelloFX extends Application {
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Application");
-        primaryStage.setScene(new Scene(root, 800, 600));
-        primaryStage.resizableProperty().setValue(false);
-        primaryStage.show();
+
+        Scene scene = new Scene(root, 300, 275);
+
+        stage.setTitle("FXML Welcome");
+        stage.setScene(scene);
+        stage.show();
     }
     public static void main(String[] args) {
         launch(args);
